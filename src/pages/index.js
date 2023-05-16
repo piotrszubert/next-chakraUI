@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { Button, Stack } from '@chakra-ui/react'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
   return (
@@ -11,21 +12,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Navbar/>
+
       <main className={`${styles.main}`}>
-        <Stack spacing={4} direction='row' align='center'>
-          <Button colorScheme='teal' size='xs'>
-            Button
-          </Button>
-          <Button colorScheme='teal' size='sm'>
-            Button
-          </Button>
-          <Button colorScheme='teal' size='md'>
-            Button
-          </Button>
-          <Button colorScheme='teal' size='lg'>
-            Button
-          </Button>
-        </Stack>
+       home
       </main>
     </>
   )
