@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { Button, Stack } from '@chakra-ui/react'
 import Navbar from '@/components/Navbar'
+import PostsList from '@/components/PostList'
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
 
       <Navbar/>
 
-      <main className={`${styles.main}`}>
-       home
+      <main style={{"padding": "0 20px"}}>
+       <PostsList/>
       </main>
     </>
   )
