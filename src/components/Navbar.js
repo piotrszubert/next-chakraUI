@@ -1,22 +1,29 @@
 import { useState } from 'react';
-import { 
-    Box, 
-    Flex,
-    Text, 
-    IconButton, 
-    VStack,
-    HStack, 
-    Drawer, 
-    DrawerOverlay, 
-    DrawerContent, 
-    DrawerCloseButton, 
-    DrawerBody, 
-    useDisclosure } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Text,
+  Button,
+  IconButton,
+  VStack,
+  HStack,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  DrawerBody,
+  useDisclosure
+} from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [navItems] = useState(['Home', 'About', 'Services', 'Contact']);
+  const socials = [
+    { href: "/", name: "mail" },
+    { href: "/", name: "github" },
+    { href: "/", name: "twitter" }
+  ];
 
   return (
     <Flex
@@ -27,22 +34,30 @@ const Navbar = () => {
       padding={4}
       bg="teal.500"
       color="white"
+      position="sticky"
+      top="0"
     >
+
       <Box>
         <Text fontSize="lg" fontWeight="bold">
           My Website
         </Text>
       </Box>
 
-      <Box
-        display={{ base: 'none', md: 'block' }}
-      >
+      <Box display={{ base: 'none', md: 'block' }}>
         <HStack spacing={2} align="start">
-            {navItems.map((item) => (
-            <Text key={item}>
-                {item}
-            </Text>
-            ))}
+          {navItems.map((item) => (
+            <Button
+              key={item}
+              colorScheme="teal"
+              _hover={{ color: "teal.500", backgroundColor: "white" }}
+              color="white"
+              variant="ghost"
+            >
+              {item}
+            </Button>
+
+          ))}
         </HStack>
       </Box>
 
@@ -59,14 +74,25 @@ const Navbar = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerBody>
-            <VStack spacing={2} align="start">
+          <DrawerBody display="flex" flexDirection="column" justifyContent="space-between">
+            <VStack spacing={2} marginTop={20} align="center">
               {navItems.map((item) => (
-                <Text key={item} mr={4}>
+                <Button key={item} colorScheme="teal" variant="ghost">
                   {item}
-                </Text>
+                </Button>
               ))}
             </VStack>
+            <HStack align="center" justifyContent="space-evenly" mb={4}>
+              {socials.map((item) => (
+                <Button
+                  key={item.name}
+                  colorScheme="teal"
+                  variant="ghost"
+                >
+                  {item.name}
+                </Button>
+              ))}
+            </HStack>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
