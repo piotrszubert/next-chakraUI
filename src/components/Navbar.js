@@ -32,7 +32,7 @@ const Navbar = () => {
       justify="space-between"
       wrap="nowrap"
       padding={4}
-      bg="teal.500"
+      bg="blue.500"
       color="white"
       position="sticky"
       top="0"
@@ -49,8 +49,8 @@ const Navbar = () => {
           {navItems.map((item) => (
             <Button
               key={item}
-              colorScheme="teal"
-              _hover={{ color: "teal.500", backgroundColor: "white" }}
+              colorScheme="blue"
+              _hover={{ color: "blue.500", backgroundColor: "white" }}
               color="white"
               variant="ghost"
             >
@@ -77,7 +77,7 @@ const Navbar = () => {
           <DrawerBody display="flex" flexDirection="column" justifyContent="space-between">
             <VStack spacing={2} marginTop={20} align="center">
               {navItems.map((item) => (
-                <Button key={item} colorScheme="teal" variant="ghost">
+                <Button key={item} colorScheme="blue" variant="ghost">
                   {item}
                 </Button>
               ))}
@@ -86,7 +86,7 @@ const Navbar = () => {
               {socials.map((item) => (
                 <Button
                   key={item.name}
-                  colorScheme="teal"
+                  colorScheme="blue"
                   variant="ghost"
                 >
                   {item.name}
