@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   Box,
   Flex,
@@ -18,7 +17,12 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [navItems] = useState(['Home', 'About', 'Services', 'Contact']);
+  
+  const navItems = [
+    {href: "/", name: "Home"},
+    {href: "/", name: "About"}
+  ]
+  
   const socials = [
     { href: "/", name: "mail" },
     { href: "/", name: "github" },
@@ -48,13 +52,13 @@ const Navbar = () => {
         <HStack spacing={2} align="start">
           {navItems.map((item) => (
             <Button
-              key={item}
+              key={item.name}
               colorScheme="blue"
               _hover={{ color: "blue.500", backgroundColor: "white" }}
               color="white"
               variant="ghost"
             >
-              {item}
+              {item.name}
             </Button>
 
           ))}
@@ -77,8 +81,8 @@ const Navbar = () => {
           <DrawerBody display="flex" flexDirection="column" justifyContent="space-between">
             <VStack spacing={2} marginTop={20} align="center">
               {navItems.map((item) => (
-                <Button key={item} colorScheme="blue" variant="ghost">
-                  {item}
+                <Button key={item.name} colorScheme="blue" variant="ghost">
+                  {item.name}
                 </Button>
               ))}
             </VStack>
