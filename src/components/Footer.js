@@ -34,7 +34,6 @@ const Footer = () => {
                 <Text fontSize="sm" color="gray.500" mr={2}>
                 &copy; {new Date().getFullYear()} Your Company. All rights reserved.
                 </Text>
-                <Box w={6} h={6} bg="blue.500" borderRadius="full" />
             </Flex>
         </Box>
     );

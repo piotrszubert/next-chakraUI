@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero/>
-        <PostsList/>
+        {/* <PostsList/> */}
       </Layout>
     </>
   )
