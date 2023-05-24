@@ -8,7 +8,8 @@ const Hero = () => {
       px={4}
       textAlign="center"
       backgroundImage="url('/hero.svg')"
-      backgroundSize="cover"
+      backgroundSize="contain"
+      backgroundRepeat="no-repeat"
     >
       <Heading as="h1" size="2xl" color="white" mb={4}>
         Welcome to My Website
