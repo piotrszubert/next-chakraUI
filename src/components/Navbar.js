@@ -46,7 +46,6 @@ const Navbar = () => {
   return (
     <Box
       position="fixed"
-      // width="100vw"
       width="full"
       paddingX={scrollBg ? 5 : 0}
       paddingY={scrollBg ? 5 : 0}
