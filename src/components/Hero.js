@@ -7,8 +7,9 @@ const Hero = () => {
       py={60}
       px={4}
       textAlign="center"
+      backgroundPosition="center"
       backgroundImage="url('/hero.svg')"
-      backgroundSize="contain"
+      backgroundSize="cover"
       backgroundRepeat="no-repeat"
     >
       <Heading as="h1" size="2xl" color="white" mb={4}>
