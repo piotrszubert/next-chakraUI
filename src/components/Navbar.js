@@ -38,24 +38,26 @@ const Navbar = () => {
   ];
 
   const socials = [
-    { href: '/', name: 'mail' },
-    { href: '/', name: 'github' },
-    { href: '/', name: 'twitter' }
+    { href: '/', name: 'mail', icon: '/social-icons/mail.svg' },
+    { href: '/', name: 'github', icon: '/social-icons/github.svg' },
+    { href: '/', name: 'twitter', icon: '/social-icons/twitter.svg' }
   ];
 
   return (
     <Box
       position="fixed"
-      // width="100vw"
       width="full"
       paddingX={scrollBg ? 5 : 0}
       paddingY={scrollBg ? 5 : 0}
       transition="padding .4s ease-in-out"
+      borderBottom={scrollBg ? 'none' : '2px solid'}
+      borderColor="brand.700"
     >
     <Flex
       as="nav"
       marginX="auto"
       borderRadius={scrollBg ? 10 : 0}
+      borderBottom={'brand.500'}
       align="center"
       justify="space-between"
       wrap="nowrap"
@@ -99,10 +101,10 @@ const Navbar = () => {
       />
 
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay />
+        <DrawerOverlay  backgroundColor="rgba(227, 28, 111, 0.3)" />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerBody display="flex" flexDirection="column" justifyContent="space-between">
+          <DrawerBody bg="black" display="flex" flexDirection="column" justifyContent="space-between">
             <VStack spacing={2} marginTop={20} align="center">
               {navItems.map((item) => (
                 <Button key={item.name} colorScheme="brand" variant="ghost">
@@ -111,15 +113,19 @@ const Navbar = () => {
               ))}
             </VStack>
             <HStack align="center" justifyContent="space-evenly" mb={4}>
-              {socials.map((item) => (
-                <Button
-                  key={item.name}
-                  colorScheme="brand"
-                  variant="ghost"
-                >
-                  {item.name}
-                </Button>
-              ))}
+                {socials.map((item) => (
+                  <Button
+                    key={item.name}
+                    colorScheme="brand"
+                    variant="ghost"
+                  >
+                    <img 
+                      src={item.icon} 
+                      style={{ filter: 'invert(1)'}} 
+                      alt={item.name} 
+                    />
+                  </Button>
+                ))}
             </HStack>
           </DrawerBody>
         </DrawerContent>

@@ -9,8 +9,7 @@ const Hero = () => {
   return (
     <Box
       bg="black"
-      pt={40}
-      pb={60}
+      py={60}
       px={4}
       textAlign="center"
       backgroundPosition="center"
