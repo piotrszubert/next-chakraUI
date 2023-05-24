@@ -50,11 +50,14 @@ const Navbar = () => {
       paddingX={scrollBg ? 5 : 0}
       paddingY={scrollBg ? 5 : 0}
       transition="padding .4s ease-in-out"
+      borderBottom={scrollBg ? 'none' : '2px solid'}
+      borderColor="brand.700"
     >
     <Flex
       as="nav"
       marginX="auto"
       borderRadius={scrollBg ? 10 : 0}
+      borderBottom={'brand.500'}
       align="center"
       justify="space-between"
       wrap="nowrap"
@@ -98,7 +101,7 @@ const Navbar = () => {
       />
 
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay />
+        <DrawerOverlay  backgroundColor="rgba(227, 28, 111, 0.3)" />
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerBody bg="black" display="flex" flexDirection="column" justifyContent="space-between">
