@@ -1,10 +1,16 @@
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { 
+  Box, 
+  Heading, 
+  Text, 
+  Container 
+} from '@chakra-ui/react';
 
 const Hero = () => {
   return (
     <Box
       bg="black"
-      py={60}
+      pt={40}
+      pb={60}
       px={4}
       textAlign="center"
       backgroundPosition="center"
@@ -12,12 +18,14 @@ const Hero = () => {
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
     >
-      <Heading as="h1" size="2xl" color="white" mb={4}>
-        Welcome to My Website
-      </Heading>
-      <Text fontSize="xl" color="white">
-        Placeholder marketing text goes here...
-      </Text>
+      <Container maxW='container.sm'>
+        <Heading as="h1" size="4xl" color="white" mb={4}>
+          Welcome to My Website
+        </Heading>
+        <Text fontSize="lg" color="white">
+          Placeholder marketing text goes here...
+        </Text>
+      </Container>
     </Box>
   );
 };

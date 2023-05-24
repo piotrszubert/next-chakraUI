@@ -1,17 +1,26 @@
 import { extendTheme } from '@chakra-ui/react';
 
-
 const theme = extendTheme({
     // Customize your theme here
+
     colors: {
       brand: {
-        500: '#bada55', // Customize your brand color
-      },
+        50: '#FCE8F1',
+        100: '#F7BFD7',
+        200: '#F297BD',
+        300: '#ED6EA3',
+        400: '#E84589',
+        500: '#E31C6F',
+        600: '#B61659',
+        700: '#881143',
+        800: '#5B0B2D',
+        900: '#2D0616'
+      }
     },
-    // fonts: {
-    //   heading: 'Montserrat, sans-serif', // Customize your font
-    //   body: 'Roboto, sans-serif', // Customize your font
-    // },
+    fonts: {
+      heading: 'Inter, sans-serif',
+      body: 'Inter, sans-serif',
+    },
     // Add more customizations as needed
 });
   

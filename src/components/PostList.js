@@ -49,7 +49,7 @@ const PostsList = () => {
           </Text>
           <Flex>
             {post.tags.map((tag, tagIndex) => (
-              <Text key={tagIndex} fontSize="sm" color="blue.500" mr={2}>
+              <Text key={tagIndex} fontSize="sm" color="brand.500" mr={2}>
                 #{tag}
               </Text>
             ))}
