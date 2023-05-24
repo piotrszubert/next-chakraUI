@@ -101,7 +101,7 @@ const Navbar = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerBody display="flex" flexDirection="column" justifyContent="space-between">
+          <DrawerBody bg="black" display="flex" flexDirection="column" justifyContent="space-between">
             <VStack spacing={2} marginTop={20} align="center">
               {navItems.map((item) => (
                 <Button key={item.name} colorScheme="brand" variant="ghost">

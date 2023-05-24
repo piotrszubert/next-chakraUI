@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Link, SimpleGrid, Text, Divider } from '@chakra-ui/
 
 const Footer = () => {
     return (
-        <Box bg="" py={8} px={4}>
+        <Box bg="black" py={8} px={4}>
             <SimpleGrid columns={[1, 3]} spacing={8}>
                 <Flex direction="column">
                     <Heading as="h4" size="md" mb={4}>
