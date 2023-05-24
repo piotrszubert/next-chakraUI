@@ -38,9 +38,9 @@ const Navbar = () => {
   ];
 
   const socials = [
-    { href: '/', name: 'mail' },
-    { href: '/', name: 'github' },
-    { href: '/', name: 'twitter' }
+    { href: '/', name: 'mail', icon: '/social-icons/mail.svg' },
+    { href: '/', name: 'github', icon: '/social-icons/github.svg' },
+    { href: '/', name: 'twitter', icon: '/social-icons/twitter.svg' }
   ];
 
   return (
@@ -110,15 +110,19 @@ const Navbar = () => {
               ))}
             </VStack>
             <HStack align="center" justifyContent="space-evenly" mb={4}>
-              {socials.map((item) => (
-                <Button
-                  key={item.name}
-                  colorScheme="brand"
-                  variant="ghost"
-                >
-                  {item.name}
-                </Button>
-              ))}
+                {socials.map((item) => (
+                  <Button
+                    key={item.name}
+                    colorScheme="brand"
+                    variant="ghost"
+                  >
+                    <img 
+                      src={item.icon} 
+                      style={{ filter: 'invert(1)'}} 
+                      alt={item.name} 
+                    />
+                  </Button>
+                ))}
             </HStack>
           </DrawerBody>
         </DrawerContent>
