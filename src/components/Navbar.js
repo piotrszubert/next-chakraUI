@@ -104,7 +104,7 @@ const Navbar = () => {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay  backgroundColor="rgba(227, 28, 111, 0.3)" />
         <DrawerContent>
-          <DrawerCloseButton />
+          <DrawerCloseButton color="white" />
           <DrawerBody bg="black" display="flex" flexDirection="column" justifyContent="space-between">
             <VStack spacing={2} marginTop={20} align="center">
               {navItems.map((item) => (
