@@ -55,6 +55,7 @@ const Navbar = () => {
     >
     <Flex
       as="nav"
+      border={scrollBg ? '2px solid white' : ''}
       marginX="auto"
       borderRadius={scrollBg ? 10 : 0}
       borderBottom={'brand.500'}
