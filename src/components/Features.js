@@ -1,7 +1,11 @@
 import { Box, Heading, Text, Container, Icon, Grid, Flex } from '@chakra-ui/react';
 import { FaCheckCircle } from 'react-icons/fa';
-
+import { HiCheckCircle } from "react-icons/hi2";
 const Features = () => {
+  
+  const boxShadowColor = "brand.500";
+  const boxShadowGradient = `linear-gradient(to bottom, ${boxShadowColor}.500, ${boxShadowColor}.200)`;
+
   const cards = [
     {
       heading: 'Best Quality',
@@ -31,6 +35,7 @@ const Features = () => {
         <Grid
           templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
           gap={4}
+          rowGap={10}
           justifyContent="center"
           alignItems="stretch" // Align items to stretch for equal height
         >
@@ -38,18 +43,23 @@ const Features = () => {
             <Box
               key={index}
               borderWidth={2}
-              borderColor="brand.600"
-              borderRadius="md"
+              borderColor="brand.500"
+              borderRadius="xl"
+              boxShadow='xl'
+              transition={'all .1s'}
+              _hover={{
+                cursor: 'pointer',
+                boxShadow: "3px 3px white",
+                transform: "translate(-0.35rem, -0.35rem)"
+              }}
             >
               <Flex
                 direction="column"
                 alignItems="flex-start"
-                gap={4}
                 p={4}
-                height="100%" // Set the flex container to take full height
               >
-                <Icon as={FaCheckCircle} boxSize={8} color="brand.600" />
-                <Heading as="h2" size="md" color="white" mt={4} mb={2}>
+                <Icon as={HiCheckCircle} boxSize={8} color="brand.600" />
+                <Heading as="h2" size="md"  color="white" mt={4} mb={2}>
                     {card.heading}
                 </Heading>
                 <Text textAlign="start" color="white">{card.text}</Text>
