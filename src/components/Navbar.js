@@ -57,7 +57,7 @@ const Navbar = () => {
       as="nav"
       border={scrollBg ? '2px solid white' : ''}
       marginX="auto"
-      borderRadius={scrollBg ? 10 : 0}
+      borderRadius={scrollBg ? 'xl' : 0}
       borderBottom={'brand.500'}
       align="center"
       justify="space-between"
@@ -66,7 +66,7 @@ const Navbar = () => {
       bg={scrollBg ? 'transparent' : 'black'}
       color={scrollBg ? 'brand.500' : 'white'}
       top="0"
-      transition="background-color .4s ease-in-out, backdrop-filter .4s ease-in-out"
+      transition="all .4s ease-in-out"
       zIndex={999}
       backdropFilter={`blur(${scrollBg ? '3px' : '0px'})`}
     >
