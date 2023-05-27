@@ -46,11 +46,12 @@ const Features = () => {
               borderColor="brand.500"
               borderRadius="xl"
               boxShadow='xl'
-              transition={'all .1s'}
+              overflow='hidden'
+              transition={'transform .14s cubic-bezier(.25, .46, .45, .69)'}
               _hover={{
                 cursor: 'pointer',
-                boxShadow: "3px 3px white",
-                transform: "translate(-0.35rem, -0.35rem)"
+                boxShadow: "6px 6px 0px 0px white",
+                transform: "translate(-6px, -6px)"
               }}
             >
               <Flex
