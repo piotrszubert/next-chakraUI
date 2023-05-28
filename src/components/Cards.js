@@ -1,7 +1,7 @@
 import { Box, Heading, Text, Container, Icon, Grid, Flex } from '@chakra-ui/react';
 import { HiCheckCircle } from "react-icons/hi2";
 
-const Features = () => {
+const Cards = () => {
 
   const cards = [
     {
@@ -27,7 +27,7 @@ const Features = () => {
   return (
     <Box
       bg="black"
-      py={60}
+      py={30}
       px={4}
       textAlign="center"
       backgroundPosition="center"
@@ -50,6 +50,7 @@ const Features = () => {
               borderRadius="xl"
               boxShadow='xl'
               overflow='hidden'
+              position='relative'
               transition={'transform .14s cubic-bezier(.25, .46, .45, .69)'}
               _hover={{
                 cursor: 'pointer',
@@ -62,7 +63,7 @@ const Features = () => {
                 alignItems="flex-start"
                 p={4}
               >
-                <img src='via.placeholder.com/300'/>
+                <img src='https://via.placeholder.com/300'/>
                 <Heading as="h2" size="md"  color="white" mt={4} mb={2}>
                     {card.heading}
                 </Heading>
@@ -76,4 +77,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Cards;
