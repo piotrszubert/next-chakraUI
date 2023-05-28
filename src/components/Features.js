@@ -1,10 +1,7 @@
 import { Box, Heading, Text, Container, Icon, Grid, Flex } from '@chakra-ui/react';
-import { FaCheckCircle } from 'react-icons/fa';
 import { HiCheckCircle } from "react-icons/hi2";
+
 const Features = () => {
-  
-  const boxShadowColor = "brand.500";
-  const boxShadowGradient = `linear-gradient(to bottom, ${boxShadowColor}.500, ${boxShadowColor}.200)`;
 
   const cards = [
     {
@@ -12,7 +9,7 @@ const Features = () => {
       text: 'We care about the quality of the product. As a digital product development agency, we believe in beautiful software.',
     },
     {
-      heading: 'Modern Technologies',
+      heading: 'Modern Tools',
       text: 'We use the modern and most flexible and secure technologies to build the best products on the internet.',
     },
     {
@@ -59,7 +56,13 @@ const Features = () => {
                 alignItems="flex-start"
                 p={4}
               >
-                <Icon as={HiCheckCircle} boxSize={8} color="brand.600" />
+                <Icon 
+                  as={HiCheckCircle} 
+                  border='2px solid white' 
+                  borderRadius="full" 
+                  boxSize={10} 
+                  color="brand.600" 
+                />
                 <Heading as="h2" size="md"  color="white" mt={4} mb={2}>
                     {card.heading}
                 </Heading>
