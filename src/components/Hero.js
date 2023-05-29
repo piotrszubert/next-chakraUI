@@ -2,7 +2,9 @@ import {
   Box, 
   Heading, 
   Text, 
-  Container 
+  Container, 
+  Button,
+  border
 } from '@chakra-ui/react';
 
 const Hero = () => {
@@ -19,11 +21,32 @@ const Hero = () => {
     >
       <Container maxW='container.sm'>
         <Heading as="h1" size="4xl" color="white" mb={4}>
-          Welcome to My Website
+          Build and scale 
+          <Text 
+            bgClip='text'
+            bgGradient='linear(to-t, brand.300, brand.500)'>
+              faster
+          </Text>
         </Heading>
         <Text fontSize="lg" color="white">
-          Placeholder marketing text goes here...
+          Blinder making it simple for you to build and 
+          grow your SaaS applications, or any business idea.
         </Text>
+        <Button 
+          colorScheme='white'
+          marginTop="4"
+          borderWidth="2px" 
+          variant='outline' 
+          size='lg'
+          transition={'transform .14s cubic-bezier(.25, .46, .45, .69)'}
+          _hover={{
+            cursor: 'pointer',
+            boxShadow: "3px 3px 0px 0px white",
+            transform: "translate(-3px, -3px)"
+          }}
+          >
+            Start now
+        </Button>
       </Container>
     </Box>
   );
