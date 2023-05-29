@@ -1,5 +1,12 @@
-import { Box, Heading, Text, Container, Icon, Grid, Flex } from '@chakra-ui/react';
-import { HiCheckCircle } from "react-icons/hi2";
+import { 
+  Box, 
+  Heading,
+  Text, 
+  Container, 
+  Grid,
+  Link, 
+  Flex 
+} from '@chakra-ui/react';
 
 const Cards = () => {
 
@@ -27,13 +34,26 @@ const Cards = () => {
   return (
     <Box
       bg="black"
-      py={30}
+      pt={60}
       px={4}
       textAlign="center"
       backgroundPosition="center"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
     >
+      <Container marginBottom={10} maxW="container.md">
+        <Heading size="2xl" marginBottom={3}>
+          Case studies
+        </Heading>
+        <Text >
+          Discover how our tailored solutions have helped businesses 
+          overcome diverse challenges and achieve remarkable results. 
+          Dive into our collection of in-depth case studies, where we
+          explore real-life success stories, analyze complex problems, 
+          and showcase the transformative impact of our services on 
+          client businesses
+        </Text>
+      </Container>
       <Container maxW="container.lg">
         <Grid
           templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
@@ -72,6 +92,13 @@ const Cards = () => {
             </Box>
           ))}
         </Grid>
+        <Box 
+          marginTop="10"
+        >
+          <Link textDecoration="underline" color='white' size="2xl" href='#'>
+            Check more
+          </Link>
+        </Box>
       </Container>
     </Box>
   );

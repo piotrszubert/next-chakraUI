@@ -1,4 +1,12 @@
-import { Box, Heading, Text, Container, Icon, Grid, Flex } from '@chakra-ui/react';
+import {
+  Box, 
+  Heading, 
+  Text, 
+  Container, 
+  Icon, 
+  Grid, 
+  Flex 
+} from '@chakra-ui/react';
 import { HiCheckCircle } from "react-icons/hi2";
 
 const Features = () => {
@@ -21,7 +29,7 @@ const Features = () => {
   return (
     <Box
       bg="black"
-      py={60}
+      pt={30}
       px={4}
       textAlign="center"
       backgroundPosition="center"
@@ -40,7 +48,7 @@ const Features = () => {
             <Box
               key={index}
               borderWidth={2}
-              borderColor="brand.500"
+              borderColor="white"
               borderRadius="xl"
             >
               <Flex

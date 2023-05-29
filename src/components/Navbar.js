@@ -52,6 +52,7 @@ const Navbar = () => {
       transition="padding .4s ease-in-out"
       borderBottom={scrollBg ? 'none' : '2px solid'}
       borderColor="brand.700"
+      zIndex={999}
     >
     <Flex
       as="nav"
@@ -72,7 +73,7 @@ const Navbar = () => {
     >
       <Box>
         <Text fontSize="lg" fontWeight="bold">
-          My Website
+          Logo
         </Text>
       </Box>
 
