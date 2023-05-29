@@ -41,9 +41,9 @@ const Cta = () => {
                         textAlign="center"
                         maxW="container.sm">
                         Split is a new, revolutionary & cost-effective way to 
-                        grow your website's traffic. It's a super-simple, 
+                        grow your website&apos;s traffic. It&apos;s a super-simple, 
                         one-time fee that will make your site rank higher 
-                        on Google and bring in more visitors. We're so 
+                        on Google and bring in more visitors. We&apos;re so 
                         confident, we offer a 100% money back guarantee.
                     </Text>
                 </Box>
