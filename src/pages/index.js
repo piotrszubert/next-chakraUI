@@ -3,6 +3,7 @@ import Layout from '@/components/Layout'
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import Cards from '@/components/Cards'
+import Cta from '@/components/Cta'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero/>
         <Features/>
         <Cards/>
+        <Cta/>
       </Layout>
     </>
   )
