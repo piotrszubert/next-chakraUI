@@ -27,7 +27,7 @@ const Cards = () => {
   return (
     <Box
       bg="black"
-      py={30}
+      pt={60}
       px={4}
       textAlign="center"
       backgroundPosition="center"

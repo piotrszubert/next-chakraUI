@@ -21,7 +21,7 @@ const Features = () => {
   return (
     <Box
       bg="black"
-      py={60}
+      pt={30}
       px={4}
       textAlign="center"
       backgroundPosition="center"

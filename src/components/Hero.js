@@ -36,6 +36,7 @@ const Hero = () => {
           colorScheme='white'
           marginTop="4"
           borderWidth="2px" 
+          backdropFilter="blur(2px)"
           variant='outline' 
           size='lg'
           transition={'transform .14s cubic-bezier(.25, .46, .45, .69)'}

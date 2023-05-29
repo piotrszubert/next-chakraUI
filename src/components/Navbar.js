@@ -73,7 +73,7 @@ const Navbar = () => {
     >
       <Box>
         <Text fontSize="lg" fontWeight="bold">
-          My Website
+          Logo
         </Text>
       </Box>
 
