@@ -42,7 +42,7 @@ const Footer = () => {
                 <Divider my={8} />
                 <Flex align="center" justify="center">
                     <Text fontSize="sm" color="gray.500" mr={2}>
-                    &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+                    &copy; {new Date().getFullYear()} Blitz. All rights reserved.
                     </Text>
                 </Flex>
             </Container>
