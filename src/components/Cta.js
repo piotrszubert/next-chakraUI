@@ -33,7 +33,7 @@ const Cta = () => {
                     <Heading 
                         size="2xl"  
                         color="white" mt={4} mb={4}>
-                        Start with logo today
+                        Start with Split today
                     </Heading>
                     <Text
                         color="white" 

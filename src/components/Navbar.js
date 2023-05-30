@@ -22,7 +22,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const shouldScrollBgChange = window.scrollY > 0; // Change the scroll threshold as needed
+      const shouldScrollBgChange = window.scrollY > 0;
       setScrollBg(shouldScrollBgChange);
     };
 
@@ -73,7 +73,7 @@ const Navbar = () => {
     >
       <Box>
         <Text fontSize="lg" fontWeight="bold">
-          Logo
+          Split
         </Text>
       </Box>
 
