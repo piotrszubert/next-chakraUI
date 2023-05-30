@@ -4,7 +4,8 @@ import {
     Accordion, 
     AccordionItem, 
     AccordionPanel, 
-    AccordionButton 
+    AccordionButton, 
+    Heading
 } from "@chakra-ui/react";
 import { AddIcon, MinusIcon } from '@chakra-ui/icons';
 
@@ -47,7 +48,9 @@ const Faq = () => {
                   <h2>
                     <AccordionButton>
                       <Box as="span" flex='1' textAlign='left'>
-                        {faq.question}
+                        <Heading as="h3" size="md">
+                          {faq.question}
+                        </Heading>
                       </Box>
                       {isExpanded ? (
                         <MinusIcon fontSize='16px' />
