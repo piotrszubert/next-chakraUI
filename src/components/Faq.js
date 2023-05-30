@@ -38,7 +38,7 @@ const Faq = () => {
   ];
 
   return (
-    <Box bg="black">
+    <Box bg="black" pb={32}>
       <Container maxW="container.lg">
         <Accordion allowMultiple>
           {faqs.map((faq, index) => (
