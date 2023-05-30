@@ -42,7 +42,7 @@ const Faq = () => {
       <Container maxW="container.lg">
         <Accordion allowMultiple>
           {faqs.map((faq, index) => (
-            <AccordionItem paddingY={4}>
+            <AccordionItem key={index} paddingY={4}>
               {({ isExpanded }) => (
                 <>
                   <h2>
