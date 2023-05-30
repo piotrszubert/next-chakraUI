@@ -55,6 +55,7 @@ const Navbar = () => {
       zIndex={999}
     >
     <Flex
+      maxW={scrollBg ? 'container.lg' : 'full'}
       as="nav"
       border={scrollBg ? '2px solid white' : ''}
       marginX="auto"
@@ -73,7 +74,7 @@ const Navbar = () => {
     >
       <Box>
         <Text fontSize="lg" fontWeight="bold">
-          Split
+          Blitz
         </Text>
       </Box>
 

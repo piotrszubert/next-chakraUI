@@ -33,14 +33,14 @@ const Cta = () => {
                     <Heading 
                         size="2xl"  
                         color="white" mt={4} mb={4}>
-                        Start with Split today
+                        Start with Blitz today
                     </Heading>
                     <Text
                         color="white" 
                         marginX="auto"
                         textAlign="center"
                         maxW="container.sm">
-                        Split is a new, revolutionary & cost-effective way to 
+                        Blitz is a new, revolutionary & cost-effective way to 
                         grow your website&apos;s traffic. It&apos;s a super-simple, 
                         one-time fee that will make your site rank higher 
                         on Google and bring in more visitors. We&apos;re so 
