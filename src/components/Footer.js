@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, Link, SimpleGrid, Text, Divider } from '@chakra-ui/react';
+import { 
+    Box, 
+    Flex, 
+    Heading, 
+    Link, 
+    SimpleGrid, 
+    Text, 
+    Divider 
+} from '@chakra-ui/react';
 
 const Footer = () => {
     return (

@@ -4,6 +4,7 @@ import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import Cards from '@/components/Cards'
 import Cta from '@/components/Cta'
+import Faq from '@/components/Faq'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Features/>
         <Cards/>
         <Cta/>
+        <Faq/>
       </Layout>
     </>
   )
