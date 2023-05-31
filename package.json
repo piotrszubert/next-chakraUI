@@ -1,25 +1,31 @@
 {
-  "name": "next-ecommerce",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@chakra-ui/icons": "^2.0.19",
-    "@chakra-ui/react": "^2.6.1",
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "@fontsource/inter": "^5.0.1",
-    "eslint": "8.40.0",
-    "eslint-config-next": "13.4.2",
-    "framer-motion": "^10.12.10",
-    "next": "13.4.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.8.0"
-  }
+    "name": "next-ecommerce",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prettier": "prettier --write .",
+        "prettier-check": "prettier --check ."
+    },
+    "dependencies": {
+        "@chakra-ui/icons": "^2.0.19",
+        "@chakra-ui/react": "^2.6.1",
+        "@emotion/react": "^11.11.0",
+        "@emotion/styled": "^11.11.0",
+        "@fontsource/inter": "^5.0.1",
+        "eslint": "8.40.0",
+        "eslint-config-next": "13.4.2",
+        "framer-motion": "^10.12.10",
+        "next": "13.4.2",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-icons": "^4.8.0"
+    },
+    "devDependencies": {
+        "eslint-config-prettier": "^8.8.0",
+        "prettier": "^2.8.8"
+    }
 }
