@@ -8,22 +8,24 @@ import {
     Flex,
 } from '@chakra-ui/react';
 
+import Image from 'next/image';
+
 const Cards = () => {
     const cards = [
         {
-            image: '',
+            image: '1.jpg',
             date: '',
             heading: 'Best Quality',
             text: 'We care about the quality of the product. As a digital product development agency, we believe in beautiful software.',
         },
         {
-            image: '',
+            image: '2.jpg',
             date: '',
             heading: 'Modern Tools',
             text: 'We use the modern and most flexible and secure technologies to build the best products on the internet.',
         },
         {
-            image: '',
+            image: '4.jpg',
             date: '',
             heading: 'Advanced Security',
             text: 'At Software Security Solutions our mission is to raise the bar by making computer security more accessible.',
@@ -84,7 +86,7 @@ const Cards = () => {
                                 alignItems="flex-start"
                                 p={4}
                             >
-                                <img src="https://via.placeholder.com/300" />
+                                <Image width="300" quality="100" height="300" src={`/card-images/${card.image}`} />
                                 <Heading
                                     as="h2"
                                     size="md"
