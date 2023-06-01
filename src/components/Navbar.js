@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
+    chakra,
     Box,
     Flex,
     Text,
@@ -14,6 +15,7 @@ import {
     DrawerBody,
     useDisclosure,
 } from '@chakra-ui/react';
+import Link from 'next/link';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
@@ -34,7 +36,7 @@ const Navbar = () => {
 
     const navItems = [
         { href: '/', name: 'Home' },
-        { href: '/', name: 'About' },
+        { href: '/contact', name: 'Contact' },
     ];
 
     const socials = [
@@ -74,7 +76,9 @@ const Navbar = () => {
             >
                 <Box>
                     <Text fontSize="lg" fontWeight="bold">
-                        Blitz
+                        <Link href="/">
+                            Blitz
+                        </Link>
                     </Text>
                 </Box>
 
@@ -82,6 +86,8 @@ const Navbar = () => {
                     <HStack spacing={2} align="start">
                         {navItems.map((item) => (
                             <Button
+                                as={chakra(Link)}
+                                href={item.href}
                                 key={item.name}
                                 colorScheme="brand"
                                 _hover={{
@@ -119,6 +125,8 @@ const Navbar = () => {
                             <VStack spacing={2} marginTop={20} align="center">
                                 {navItems.map((item) => (
                                     <Button
+                                        as={chakra(Link)}
+                                        href={item.href}
                                         key={item.name}
                                         colorScheme="brand"
                                         variant="ghost"
