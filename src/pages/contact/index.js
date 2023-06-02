@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '@/components/Layout';
+import ContactForm from '@/components/ContactForm';
 
 export default function About() {
     return (
@@ -17,9 +18,7 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Layout>
-                <section style={{minHeight: '80vh', backgroundColor: '#000', display: 'grid', placeItems: "center"}}>
-                    Contact
-                </section>
+                <ContactForm/>
             </Layout>
         </>
     );
