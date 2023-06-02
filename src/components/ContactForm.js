@@ -17,7 +17,27 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  
+  const onSubmit = async (data) => {
+
+    console.log(data);
+
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  
+    if (res.ok) {
+      console.log('Form submitted successfully!');
+      // Handle successful form submission, such as displaying a success message or redirecting to a new page
+    } else {
+      console.error('Form submission failed!');
+      // Handle form submission error, such as displaying an error message or logging the error
+    }
+  };
 
   return (
     <Box background="black" py={60}>
