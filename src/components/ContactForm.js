@@ -15,7 +15,7 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
   
   const onSubmit = async (data) => {
@@ -48,6 +48,9 @@ const ContactForm = () => {
               <FormLabel htmlFor="name">Name</FormLabel>
               <Input
                 id="name"
+                _hover=""
+                _focus={{outlineColor: 'brand.300', borderColor: "white"}}
+                border="2px solid white"
                 placeholder="Enter your name"
                 {...register('name', { required: 'Name is required' })}
               />
@@ -60,6 +63,9 @@ const ContactForm = () => {
               <FormLabel htmlFor="email">Email</FormLabel>
               <Input
                 id="email"
+                border="2px solid white"
+                _hover=""
+                _focus={{outlineColor: 'brand.300', borderColor: "white"}}
                 type="email"
                 placeholder="Enter your email"
                 {...register('email', { required: 'Email is required' })}
@@ -72,6 +78,10 @@ const ContactForm = () => {
             <FormControl isInvalid={errors.message}>
               <FormLabel htmlFor="message">Message</FormLabel>
               <Textarea
+                resize="none"
+                border="2px solid white"
+                _hover=""
+                _focus={{outlineColor: 'brand.300', borderColor: "white"}}
                 id="message"
                 placeholder="Enter your message"
                 {...register('message', { required: 'Message is required' })}
@@ -81,8 +91,24 @@ const ContactForm = () => {
               </FormErrorMessage>
             </FormControl>
 
-            <Button colorScheme="brand" type="submit">
-              Submit
+            <Button
+                isLoading={isSubmitting} 
+                type="submit"
+                colorScheme="white"
+                borderWidth="2px"
+                backdropFilter="blur(2px)"
+                variant="outline"
+                size="lg"
+                transition={
+                    'transform .14s cubic-bezier(.25, .46, .45, .69)'
+                }
+                _hover={{
+                    cursor: 'pointer',
+                    boxShadow: '3px 3px 0px 0px white',
+                    transform: 'translate(-3px, -3px)',
+                }}
+            >
+                Start now
             </Button>
           </VStack>
         </form>
