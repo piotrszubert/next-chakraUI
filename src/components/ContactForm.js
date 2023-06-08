@@ -10,6 +10,7 @@ import {
   Container,
   Textarea,
 } from '@chakra-ui/react';
+import { useToast } from '@chakra-ui/react'
 
 const ContactForm = () => {
   const {
@@ -17,11 +18,11 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm();
+
+  const toast = useToast();
   
   const onSubmit = async (data) => {
-
-    console.log(data);
-
+    // console.log(data);
     const res = await fetch('/api/contact', {
       method: 'POST',
       body: JSON.stringify(data),
@@ -31,11 +32,21 @@ const ContactForm = () => {
     });
   
     if (res.ok) {
-      console.log('Form submitted successfully!');
-      // Handle successful form submission, such as displaying a success message or redirecting to a new page
+      toast({
+        title: 'Message sent!',
+        description: "Your message was sent succesfully",
+        status: 'success',
+        duration: 3000,
+        isClosable: true,
+      })
     } else {
-      console.error('Form submission failed!');
-      // Handle form submission error, such as displaying an error message or logging the error
+      toast({
+        title: 'Error occured!',
+        description: "Something went wrong. Try again later.",
+        status: 'error',
+        duration: 3000,
+        isClosable: true,
+      })
     }
   };
 
