@@ -18,7 +18,7 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Layout>
-                <ContactForm/>
+                <ContactForm />
             </Layout>
         </>
     );
