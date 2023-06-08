@@ -1,0 +1,21 @@
+# Ignore build output
+/.next
+
+# Ignore public directory (contains static assets)
+/public
+
+# Ignore serverless function directory
+/functions
+
+# Ignore coverage reports
+/coverage
+
+# Ignore development environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore specific files
+package-lock.json
+yarn.lock
