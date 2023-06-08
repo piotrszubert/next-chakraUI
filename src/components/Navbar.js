@@ -16,6 +16,7 @@ import {
     useDisclosure,
 } from '@chakra-ui/react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
@@ -144,7 +145,9 @@ const Navbar = () => {
                                         colorScheme="brand"
                                         variant="ghost"
                                     >
-                                        <img
+                                        <Image
+                                            width={20}
+                                            height={20}
                                             src={item.icon}
                                             style={{ filter: 'invert(1)' }}
                                             alt={item.name}
