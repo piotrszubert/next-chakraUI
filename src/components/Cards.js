@@ -86,7 +86,12 @@ const Cards = () => {
                                 alignItems="flex-start"
                                 p={4}
                             >
-                                <Image width="300" quality="100" height="300" src={`/card-images/${card.image}`} />
+                                <Image
+                                    width="300"
+                                    quality="100"
+                                    height="300"
+                                    src={`/card-images/${card.image}`}
+                                />
                                 <Heading
                                     as="h2"
                                     size="md"

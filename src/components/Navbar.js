@@ -76,9 +76,7 @@ const Navbar = () => {
             >
                 <Box>
                     <Text fontSize="lg" fontWeight="bold">
-                        <Link href="/">
-                            Blitz
-                        </Link>
+                        <Link href="/">Blitz</Link>
                     </Text>
                 </Box>
 
