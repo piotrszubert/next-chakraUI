@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <Box bg="black" py={8} px={4}>
             <Container maxW="container.lg">
-                <SimpleGrid paddingX={5} columns={[1, 2, 3]} spacing={16}>
+                {/* <SimpleGrid paddingX={5} columns={[1, 2, 3]} spacing={16}>
                     <Flex direction="column" gap={2}>
                         <Heading as="h3" color="brand.500" size="md" mb={3}>
                             Company
@@ -38,7 +38,7 @@ const Footer = () => {
                         <Link href="#">Resource 2</Link>
                         <Link href="#">Resource 3</Link>
                     </Flex>
-                </SimpleGrid>
+                </SimpleGrid> */}
                 <Divider my={8} />
                 <Flex align="center" justify="center">
                     <Text fontSize="sm" color="gray.500" mr={2}>
