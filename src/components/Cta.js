@@ -1,4 +1,12 @@
-import { chakra, Box, Heading, Text, Container, Flex, Button } from '@chakra-ui/react';
+import {
+    chakra,
+    Box,
+    Heading,
+    Text,
+    Container,
+    Flex,
+    Button,
+} from '@chakra-ui/react';
 import Link from 'next/link';
 
 const Cta = () => {

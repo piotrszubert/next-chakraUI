@@ -6,7 +6,7 @@ import {
     Container,
     Button,
 } from '@chakra-ui/react';
-import Link from 'next/link'
+import Link from 'next/link';
 
 const Hero = () => {
     return (
