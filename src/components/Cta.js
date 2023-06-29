@@ -1,4 +1,5 @@
-import { Box, Heading, Text, Container, Flex, Button } from '@chakra-ui/react';
+import { chakra, Box, Heading, Text, Container, Flex, Button } from '@chakra-ui/react';
+import Link from 'next/link';
 
 const Cta = () => {
     return (
@@ -33,6 +34,8 @@ const Cta = () => {
                         </Box>
                         <Box display="flex" justifyContent="center">
                             <Button
+                                as={chakra(Link)}
+                                href="/contact"
                                 colorScheme="white"
                                 borderWidth="2px"
                                 backdropFilter="blur(2px)"

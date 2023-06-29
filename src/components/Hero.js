@@ -1,11 +1,12 @@
 import {
+    chakra,
     Box,
     Heading,
     Text,
     Container,
     Button,
-    border,
 } from '@chakra-ui/react';
+import Link from 'next/link'
 
 const Hero = () => {
     return (
@@ -34,6 +35,8 @@ const Hero = () => {
                     applications, or any business idea.
                 </Text>
                 <Button
+                    as={chakra(Link)}
+                    href="/contact"
                     colorScheme="white"
                     marginTop="4"
                     borderWidth="2px"
